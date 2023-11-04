@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #151515;
+}
+
+.movie-card {
+    margin-top: 5rem;
+}
+
+.movie-poster {
+    border-radius: 10px;
+    height: 500px;
+    transition: all 1s;
+    cursor: pointer;
+    left: -1000px;
+    position: relative;
+    animation: slide-from-left 3.5s ease-in-out forwards;
+    transition: all 1s;
+
+}
+
+.movie-poster:hover{
+    transform: scale(1.03);
+}
+
+@keyframes slide-from-left {
+    80% {
+        left: 0.3rem;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+*/ .movie-poster:hover {
+    transform: scale(1.02);
+    box-shadow: 2px 2px 2px -2px rgb(26, 0, 51);
+
+}
+
+
+.movie-info-container {
+    text-align: center;
+}
+
+.movie-info-title {
+    transform: translateY(-500px);
+    animation: slide-from-top 3.5s ease-in-out forwards;
+    text-transform: uppercase;
+}
+
+@keyframes slide-from-top {
+    80% {
+        transform: translateY(20px)
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.movie-genres {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.movie-rating {
+    border: 1px solid #777;
+    color: #777;
+    padding: 0.2rem;
+    margin-right: 1rem;
+}
+
+.movie-duraton {
+    margin-left: 1rem;
+    letter-spacing: 0.1rem;
+
+}
+
+.movie-duraton::before {
+    content: "\2022";
+}
+
+.movie-info-actions {
+    font-size: 1.1rem;
+
+}
+
+.movie-info-actions ul {
+    list-style: none;
+    margin-top: 1rem;
+
+}
+
+.movie-info-actions ul li {
+    display: inline-block;
+    margin-right: 2rem;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(3, 37, 65);
+    border-radius: 50%;
+}
+
+.movie-info-actions ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.movie-info-quote {
+    font-style: italic;
+    color: rgb(218, 217, 217);
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.movie-info-overvew-title {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+}
+
+footer {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #777;
+
+}
+
+footer ul li {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #777;
+}
